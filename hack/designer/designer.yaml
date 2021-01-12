@@ -1,0 +1,30 @@
+logging:
+  level: info
+  formatter: text
+  output: stderr
+
+app:
+  name: Designer
+  basePath: /api/designer/v1
+
+prometheus:
+  enabled: true
+  port: 9090
+  endpoint: /metrics
+
+probes:
+  enabled: true
+  livenessEndpoint: /healthz
+  readinessEndpoint: /ready
+
+mongodb:
+  uri: mongodb://root:admin@127.0.0.1:27017
+  database: designer
+  timeout: 20
+  maxPoolSize: 16
+  maxConnIdleTime: 30
+  heartBeatInterval: 15
+
+migrate:
+  enabled: false
+  directory: hack/designer/scripts/json

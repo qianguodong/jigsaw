@@ -1,0 +1,6 @@
+filters:
+    ".*":
+      reviewers:
+        - guodongq
+      approvers:
+        - guodongq

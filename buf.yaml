@@ -1,0 +1,13 @@
+version: v1beta1
+build:
+  roots:
+    - api/proto
+    - third_party
+  excludes:
+lint:
+  use:
+    - BASIC
+    - FILE_LOWER_SNAKE_CASE
+breaking:
+  use:
+    - WIRE_JSON
