@@ -1,17 +1,17 @@
-package operator
+package designer
 
 import (
 	"fmt"
 	"os"
 
-	"github.com/guodongq/jigsaw/pkg/operator/serve"
+	"github.com/guodongq/jigsaw/internal/designer/serve"
 
 	"github.com/guodongq/jigsaw/pkg/version"
 	"github.com/spf13/cobra"
 )
 
 var RootCmd = &cobra.Command{
-	Use: "operator",
+	Use: "designer",
 }
 
 func Execute() {

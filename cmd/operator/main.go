@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/guodongq/jigsaw/pkg/operator"
+	"github.com/guodongq/jigsaw/internal/operator"
 	"github.com/guodongq/jigsaw/pkg/util/profile"
 )
 
