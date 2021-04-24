@@ -1,11 +1,11 @@
 package serve
 
 import (
-	"github.com/guodongq/jigsaw/pkg/provider/app"
-	"github.com/guodongq/jigsaw/pkg/provider/logging"
-	"github.com/guodongq/jigsaw/pkg/provider/probes"
-	"github.com/guodongq/jigsaw/pkg/provider/prometheus"
-	"github.com/guodongq/jigsaw/pkg/provider/settings"
+	"github.com/guodongq/jigsaw/pkg/module/app"
+	"github.com/guodongq/jigsaw/pkg/module/logging"
+	"github.com/guodongq/jigsaw/pkg/module/probes"
+	"github.com/guodongq/jigsaw/pkg/module/prometheus"
+	"github.com/guodongq/jigsaw/pkg/module/setting"
 	"github.com/spf13/cobra"
 	"go.uber.org/fx"
 )
@@ -15,7 +15,7 @@ var serveCmd = &cobra.Command{
 	Short: "Run the Jigsaw Model Designer server",
 	Run: func(cmd *cobra.Command, args []string) {
 		fx.New(
-			settings.Module(cmd.PersistentFlags()),
+			setting.Module(cmd),
 			logging.Module(),
 			prometheus.Module(),
 			app.Module(),

@@ -11,11 +11,10 @@ require (
 	github.com/prometheus/client_golang v0.9.3
 	github.com/sirupsen/logrus v1.4.2
 	github.com/spf13/cobra v1.1.1
-	github.com/spf13/pflag v1.0.5
+	github.com/spf13/viper v1.7.0
 	github.com/uber/jaeger-client-go v2.25.0+incompatible
 	github.com/uber/jaeger-lib v2.4.0+incompatible
 	go.mongodb.org/mongo-driver v1.4.4
-	go.uber.org/config v1.4.0
 	go.uber.org/fx v1.13.1
 	google.golang.org/genproto v0.0.0-20210106152847-07624b53cd92
 	google.golang.org/grpc v1.34.0
